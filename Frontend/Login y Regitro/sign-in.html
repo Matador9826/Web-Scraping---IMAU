@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../Login y Regitro/style_sign-in.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Login y Registro</title>
+</head>
+
+<body>
+
+    <div class="container-form sign-in">
+        <form class="formulario" onsubmit="return false">
+            <h2 class="create-account">Iniciar Sesion</h2>
+            <div class="img">
+                <img src="../media/usuario.png" alt="Login"></img>
+                <br><br><br>
+            </div>
+            <div class="input-group">
+                <input id="txtemail" placeholder="User" placeholder="User" onkeyup="valida_user_log()">
+                <span id="emailLog-error"></span>
+                <br><br>  
+            </div>
+            <div class="input-group">
+            <input id= "txtcontrasena" type="password" placeholder="Contraseña" autocomplete="on" onkeyup="valida_contrasena_log()">
+            <span id="contrasenaLog-error"></span>
+            </div>
+            <input id="btnLogin" type="submit" value="Iniciar Sesion" onclick="return validaformLog()">
+            <span id="submit-errorLog"></span>
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido de nuevo</h2>
+                <p>Si aun no tienes una cuenta por favor registrese aqui</p>         
+                <a href="../Login y Regitro/sign-up.html"><button class="sign-in-btn">Registrarse</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="exitoso" id="exito" style="display:none">
+        Sus datos han sido recibidos con éxito.
+    </div>
+    <div id="fracaso" style="display:none">
+        Se ha producido un error durante el envío de datos.
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.0.0.js"crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src = "LoginScript.js"></script> 
+<script src="script.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

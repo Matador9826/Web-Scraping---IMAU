@@ -1,0 +1,108 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../media/atardecer.jpg") !important;;
+    background-repeat: no-repeat !important;;
+    background-size: cover !important;;
+    background-position: center center !important;;
+    }
+
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon{
+    background: white;
+    color: #85534e;
+}
+
+.search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+}
+
+.container__cards{
+    padding: 2em;
+   
+}
+
+.loader-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    position: fixed;
+    margin-top: -20rem;
+}
+
+.loader{
+    background-color: #353b48;
+    width: 5rem;
+    height: 5rem;
+    border: 5px solid;
+    color: gray;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader
+{
+    25%{
+        color: #f1c471;
+    }
+
+    50%{
+        color: #f1c40f;
+    }
+
+    75%{
+        color: #e74c3c;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.float{
+    margin-top: 20rem;
+}

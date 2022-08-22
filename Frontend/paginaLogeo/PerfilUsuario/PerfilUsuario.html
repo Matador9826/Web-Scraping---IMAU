@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head id="Headid">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="PerfilUsuario.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>IMAU</title>
+    </head>
+
+    <body>
+        <div id="Bodyid">
+            <section class="aria">
+                <center>
+                <form class="formulario" onsubmit="return false">
+                
+                    <h2 class="create-account">Editar Perfil</h2>
+                    <center>
+                        <div id="perfil_image">
+                            
+                        </div>
+                    </center>
+                    <div class="input-group">
+                        <input type = "file" id="img_perfil"/>
+                        <br><br>
+                    </div>
+                <div class="input-group">
+                    <input type="text" id="nombre" placeholder="Nombre" onkeyup="validaNombre()">
+                    <span id="nombre-error"></span>
+                    <br><br>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="apellidos" placeholder="Apellidos" onkeyup="validaApellidos()">
+                    <span id="apellidos-error"></span>
+                    <br><br>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="user" placeholder="User" onkeyup="validaUsers()">
+                    <span id="user-error"></span>
+                    <br><br>
+                </div>
+                <div class="input-group">
+                    <select name="Sexo" id="sexo" onkeyup="validaSexo()">
+                        <option value="" disabled selected>Selecciona tu Genero</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select >
+                    <span id="sexo-error"></span>
+                    <br><br>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="correo" placeholder="Correo" onkeyup="validaCorreo()">
+                    <span id="correo-error"></span>
+                    <br><br>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="Password" placeholder="Contraseña" onkeyup="validaPassword()">
+                    <span id="password-error"></span>
+                    <br><br>
+                </div>
+                <div class="input-group">
+                <input type="date" name="Fecha" id="fecha" onkeyup="validaFecha()">
+                    <span id="fecha-error"></span>
+                </div>
+
+                <input id="btnActualizar" type="submit" value="Actualizar" onclick="return validaform()">
+                <span id="submit-error"></span>
+
+                </form>
+            </center>
+            </section>
+        </div>
+        
+    <script src="https://code.jquery.com/jquery-3.0.0.js"crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="PerfilUsuario.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>      
+
+</html>
