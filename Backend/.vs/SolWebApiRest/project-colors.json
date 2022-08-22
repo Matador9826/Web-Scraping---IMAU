@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7bd1973e-8b4e-4e40-b455-fb1dbfbfca5d": {
+      "ProjectGuid": "7bd1973e-8b4e-4e40-b455-fb1dbfbfca5d",
+      "DisplayName": "WebApiRest",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
